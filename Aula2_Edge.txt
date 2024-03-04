@@ -1,0 +1,6 @@
+Resistores
+Primeira faixa = 1 algarismo
+Segunda faixa = 2 algarismo
+Terceira faixa = Multiplicador
+Quarta faixa = Tolerancia
+Calculo = https://imgur.com/a/kLHviL7
