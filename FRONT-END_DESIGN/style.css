@@ -1,0 +1,47 @@
+/* Formatação padrão  */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #03202a;
+    
+}
+.container{
+    padding: 20px;
+    max-width: 1000px;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+nav{
+    padding-right: 10px; /*Top Right Bottom Left*/
+
+}
+
+nav a{
+     margin-right: 15px;
+     text-decoration: none;
+     color: #0077bb;
+     
+}
+nav a:hover{
+    text-decoration: underline;
+    color: #03202a;
+}
+.img-txt{
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+}
+.text-content p{
+    text-align: justify;
+    color: #03202a;
+}
+figcaption{
+    color: #03202a;
+    font-size: 10px;
+}
+h1{
+    color: #03202a;
+}
