@@ -12,3 +12,4 @@ Mentalidade e Tecnicas Ageis em Design de Software
 Ser agil é focar no fundamental primeiro, ser adaptativo e ser flexivel
 Metolodogia Diamante = https://i.imgur.com/hO9xArZ.png
 Pensanmento Divergente x Pensamento Convergente
+Descobrir, Definir, Desenvolver e Entregar
