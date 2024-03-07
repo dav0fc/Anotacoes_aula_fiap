@@ -1,0 +1,14 @@
+Engenharia de Software era pensado como industria, por isso engenharia
+Engenharia de Software é uma disciplina que se concenta na aplicação de princípios científicos e técnicas para o desenvolvimento de software de alta qualidade e confialibilidad
+Entendimento do Problema -> Planejamento de Solução -> Excecuçaõ do plano -> exame de resultado -> Entrega
+Design de Software é tudo que esta em Planejamento.
+Design é Entendimento do Problema - Planejamento da Solição  - Exame do Resultado.
+Mundo esta VUCA e depois BANI
+Qualidade de Software -> Grau em que um produto de software atende as necessidades e expectativas dos seus usuarios
+Qualidade interna e externa https://i.imgur.com/t8AY0Q0.png
+Qualidade de Usuario = UX
+Desenvolver sempre preocupado com Usabilidade, Qualidade de Software, User Experience e preocupado com Mundo VUCA e BANI
+Mentalidade e Tecnicas Ageis em Design de Software
+Ser agil é focar no fundamental primeiro, ser adaptativo e ser flexivel
+Metolodogia Diamante = https://i.imgur.com/hO9xArZ.png
+Pensanmento Divergente x Pensamento Convergente
