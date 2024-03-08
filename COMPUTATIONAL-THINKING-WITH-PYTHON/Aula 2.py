@@ -214,14 +214,19 @@ valor_1 = int(input("Escreva um valor: "))
 valor_2 = int(input("Escreva um valor: "))
 valor_3 = int(input("Escreva um valor: "))
 
-if valor_1 - valor_2 < 0:
+if valor_2 - valor_1 < 0:
     guardar = valor_1
     valor_1 = valor_2
-    valor_1 = guardar
-if valor_2 - valor_3 < 0:
+    valor_2 = guardar
+if valor_3 - valor_2 < 0:
     guardar = valor_2
     valor_2 = valor_3
+    valor_3 = guardar
+if valor_2 - valor_1 < 0:
+    guardar = valor_1
+    valor_1 = valor_2
     valor_2 = guardar
+
 print(valor_1)
 print(valor_2)
 print(valor_3)
