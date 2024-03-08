@@ -114,7 +114,7 @@ else :
     print("Pode bebeeerrr")
 
 
-'''
+
 
 letra = input("Digite uma letra: ")
 
@@ -123,6 +123,108 @@ if letra == 'A' or letra == 'E' or letra == 'I' or letra == 'O' or letra == 'U' 
 else :
     print(f"{letra} é uma consoante")
 
+
+
+
+letra = input("Digite uma letra: ")
+vogal = False
+
+if letra == 'A' or letra == 'a':
+    print(" é uma vogal")
+    vogal = True
+
+if letra == 'E' or letra == 'e':
+    print(" é uma vogal")
+    vogal = True
+
+if letra == 'I' or letra == 'i':
+    print(" é uma vogal")
+    vogal = True
+
+if letra == 'O' or letra == 'o':
+    print(" é uma vogal")
+    vogal = True
+
+if letra == 'U' or letra == 'u':
+    print(" é uma vogal")
+    vogal = True
+
+if not vogal:
+    print(" é uma consoante")
+
+
+
+letra = input("Digite uma letra: ")
+
+if letra == 'A' or letra == 'a':
+    print(" é uma vogal")
+
+elif letra == 'E' or letra == 'e':
+    print(" é uma vogal")
+
+
+elif letra == 'I' or letra == 'i':
+    print(" é uma vogal")
+
+
+elif letra == 'O' or letra == 'o':
+    print(" é uma vogal")
+
+
+elif letra == 'U' or letra == 'u':
+    print(" é uma vogal")
+
+else:
+    print(" é uma consoante")
+
+
+print("-------------------------------")
+print("        HORA DO LEÃO           \n")
+salario = float(input("Me diga seu salario para eu descontar: R$"))
+
+
+if salario <= 1903.98 :
+    aliquota = 0
+    print("Voce está isento\n")
+    print("       ESCAPOU DO LEÃO         ")
+    print("-------------------------------")
+
+elif 1903.99 < salario  :
+    aliquota = 7.5/100
+
+elif 2826.66 < salario   :
+    aliquota = 15/100
+
+elif 3751.06 < salario  :
+    aliquota = 22.5/100
+
+else  :
+    aliquota = 27.5/100
+desconto = aliquota * salario
+salario =  salario - desconto
+
+if aliquota != 0 :
+    print(f"Seu desconto é de R${desconto} e seu Salario liquido é de R${salario}\n")
+    print(" MUITO OBRIGADO POR CONTRIBUIR ")
+    print("-------------------------------")
+
+'''
+
+valor_1 = int(input("Escreva um valor: "))
+valor_2 = int(input("Escreva um valor: "))
+valor_3 = int(input("Escreva um valor: "))
+
+if valor_1 - valor_2 < 0:
+    guardar = valor_1
+    valor_1 = valor_2
+    valor_1 = guardar
+if valor_2 - valor_3 < 0:
+    guardar = valor_2
+    valor_2 = valor_3
+    valor_2 = guardar
+print(valor_1)
+print(valor_2)
+print(valor_3)
 
 
 
