@@ -1,0 +1,6 @@
+CONSULTAR DOCUMENTAÇÂO
+git school 
+git ammend pra mudar nome de commit
+git diff pra comparar commits
+git revert pra reverter
+git reset --hard idcommit
