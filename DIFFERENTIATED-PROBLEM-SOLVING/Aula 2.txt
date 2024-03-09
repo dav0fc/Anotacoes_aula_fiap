@@ -1,0 +1,26 @@
+Enteder conceito de funçõe.
+Dependecias em quatidades.
+Modelos Matematicos.
+Funções estão em todos os lugares, de forma explicita ou implicita.
+Representar de quatro maneiras:
+Verbalmente (palavras)
+Numericamente (tabelas)
+Visualmente (graficos)
+ALgebricamente (formula explicita)
+Linha de tendencia
+Metodo dos minimos quadrados
+Definiçã infomal: Função é uma relação matematica surge das dependcias entre grandezas
+y = f(x) 
+imagem 3 Contradominio
+x = entrada
+f(x) =  sainda
+Função só exixte quando se tem 1 valor de X pra 1 valor de Y 
+Funções injetoras: para cada elemtento do dominio, exita somente uma correspondencia na imagem
+Funcções Ejetoras: cada elemento em imahem, exixta correspondencia no dominio
+Funções Bijetoras: Realiza ambas
+Duas linhas desconectadas: Funação descontinua
+Teste da reta vertical: Trace uma reta do ponto 0xy e se a reta cortar mais de uma curva, não é função
+Função par: Função espelhada no eixo y
+Função impar: Função espelhada entre quadrantes
+Função Crescente: Quando o valor de y cresce
+Função Decresnte: Quando o valor de y decresce
