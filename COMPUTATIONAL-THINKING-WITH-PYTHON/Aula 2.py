@@ -1,4 +1,4 @@
-'''
+''' AULA 1
 nome = input("Diga seu nome: ")
 p_n = int(input(f"{nome}, Diga um numero: "))
 s_n = int(input(f"{nome}, Diga outro numero: "))
@@ -24,9 +24,9 @@ print(frase)
 frase = frase + " roubado"
 print(frase)
 frase = frase + " domingo"
-print(frase)
+print(frase)'''
 
-
+'''AULA 2
 p_n = 2
 s_n = 3
 
@@ -206,10 +206,46 @@ salario =  salario - desconto
 if aliquota != 0 :
     print(f"Seu desconto é de R${desconto} e seu Salario liquido é de R${salario}\n")
     print(" MUITO OBRIGADO POR CONTRIBUIR ")
-    print("-------------------------------")
+    print("-------------------------------")'''
 
-'''
+'''QUestao 1
+valor_1 = int(input("Escreva um valor: "))
+valor_2 = int(input("Escreva um valor: "))
 
+if valor_2 - valor_1 < 0:
+    guardar = valor_1
+    valor_1 = valor_2
+    valor_2 = guardar
+print(valor_1)
+print(valor_2)'''
+
+'''Questao 2
+nasc = int(input("Em que ano nasceu? "))
+if 2024 - nasc >= 16:
+    print("Você ja pode votar :)")
+else:
+    print("Você não pode votar. ")'''
+
+'''Questao 3
+senha = "1234"
+senha_escrita = input("Digite sua senha: ")
+
+if senha_escrita == senha :
+    print("ACESSO CONCEDIDO")
+else:
+    print("ACESSO NEGADO")'''
+
+'''Questao 4
+macas = int(input("Quantas maçãs tem no carrinho? "))
+if macas >= 12:
+    multi = 0.25
+else:
+    multi = 0.30
+total = multi * macas
+print(f"O preço total é: R${total}")
+print(multi)'''
+
+'''QUESTAO 5
 valor_1 = int(input("Escreva um valor: "))
 valor_2 = int(input("Escreva um valor: "))
 valor_3 = int(input("Escreva um valor: "))
@@ -229,7 +265,21 @@ if valor_2 - valor_1 < 0:
 
 print(valor_1)
 print(valor_2)
-print(valor_3)
+print(valor_3)'''
 
+'''Questão 6
+sex = input("Seu sexo é (F/M): ")
+alt = float(input("Sua altura é (Em M com ponto): "))
 
+if sex == 'M' or sex == 'm':
+    imc = 72.7 * alt- 58
+elif sex == 'F' or sex == 'f':
+    imc = 62.1 * alt - 44.7
+else:
+    imc = 0
+    print("Sexo invalido.")
+print(f"Seu IMC é: {imc}")'''
 
+'''Questão 7&8'''
+lados = input("Quantos lados tem o poligono regular? ")
+l_m = input("Qual a medida desses lados? ")
