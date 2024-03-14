@@ -1,10 +1,13 @@
-Inovação
-- Produto / Serviços 
-- Processo 
-- Organição
-- Marketing
-4 Ps = Preço, Produto, Praça e Promoção
-Graus de Inovação
-- Incremental
-- Radical
-- Paradigma Técnico-Economico
+Seu Giulio Agnolio tem uma loja pequena e ama vinho, tem só um sistema integrado pra estoque e venda, só 6 funcionarios
+Mais de 6000 tipos de uvas pra fazer vinho, existem infinitos rotulos e tipos de vinhos
+Vivos são produtos vinhos. Tem que guardar bem a garrafa
+Loja fisica possue adegas especializadas.
+TAbela de controle de temperatura ao longo do tempo, e mais informações do estoque
+Clientes normais são os entusiastas. Os que mais perguntam e os que mais querem informações.
+Sr giulio quer uma experencia do usuario difernte e melhor.
+Criar a mesma condição de vendedor no site que vendedor na vida real
+Alto nivel de indefinição = devemos ultilizar a metodologia agil de desenvolvimento
+Tecnicas de Design para ux e ui
+Devemos formar uma Squad com diversas competencias com a filha do proprietario.
+Primeiro passo: Entender o cliente e entender oque ele precisa.
+Tecnicas pra conhecer o CLiente
