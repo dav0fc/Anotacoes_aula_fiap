@@ -25,6 +25,7 @@ frase = frase + " roubado"
 print(frase)
 frase = frase + " domingo"
 print(frase)'''
+import math
 
 '''AULA 2
 p_n = 2
@@ -208,7 +209,8 @@ if aliquota != 0 :
     print(" MUITO OBRIGADO POR CONTRIBUIR ")
     print("-------------------------------")'''
 
-'''QUestao 1
+#Questao 1
+'''
 valor_1 = int(input("Escreva um valor: "))
 valor_2 = int(input("Escreva um valor: "))
 
@@ -216,17 +218,18 @@ if valor_2 - valor_1 < 0:
     guardar = valor_1
     valor_1 = valor_2
     valor_2 = guardar
-print(valor_1)
 print(valor_2)'''
 
-'''Questao 2
+#Questao 2
+'''
 nasc = int(input("Em que ano nasceu? "))
 if 2024 - nasc >= 16:
     print("Você ja pode votar :)")
 else:
     print("Você não pode votar. ")'''
 
-'''Questao 3
+#Questao 3
+'''
 senha = "1234"
 senha_escrita = input("Digite sua senha: ")
 
@@ -235,7 +238,8 @@ if senha_escrita == senha :
 else:
     print("ACESSO NEGADO")'''
 
-'''Questao 4
+#Questao 4
+'''
 macas = int(input("Quantas maçãs tem no carrinho? "))
 if macas >= 12:
     multi = 0.25
@@ -245,7 +249,8 @@ total = multi * macas
 print(f"O preço total é: R${total}")
 print(multi)'''
 
-'''QUESTAO 5
+#QUESTAO 5
+'''
 valor_1 = int(input("Escreva um valor: "))
 valor_2 = int(input("Escreva um valor: "))
 valor_3 = int(input("Escreva um valor: "))
@@ -254,7 +259,7 @@ if valor_2 - valor_1 < 0:
     guardar = valor_1
     valor_1 = valor_2
     valor_2 = guardar
-if valor_3 - valor_2 < 0:
+elif valor_3 - valor_2 < 0:
     guardar = valor_2
     valor_2 = valor_3
     valor_3 = guardar
@@ -263,11 +268,11 @@ if valor_2 - valor_1 < 0:
     valor_1 = valor_2
     valor_2 = guardar
 
-print(valor_1)
-print(valor_2)
-print(valor_3)'''
+print(valor_1,valor_2,valor_3)
+'''
+#Questão 6
 
-'''Questão 6
+'''
 sex = input("Seu sexo é (F/M): ")
 alt = float(input("Sua altura é (Em M com ponto): "))
 
@@ -280,6 +285,81 @@ else:
     print("Sexo invalido.")
 print(f"Seu IMC é: {imc}")'''
 
-'''Questão 7&8'''
-lados = input("Quantos lados tem o poligono regular? ")
-l_m = input("Qual a medida desses lados? ")
+#Questão 7&8
+'''
+lados = int(input("Quantos lados tem o poligono regular? "))
+
+if lados < 3:
+    print('Não é um poligono')
+else:
+    l_m = float(input("Qual a medida desses lados? "))
+    if lados == 3:
+        peri = lados * l_m
+        print(f'É um triangulo com perimetro: {peri}cm')
+    elif lados == 4:
+        peri = lados * l_m
+        print(f'É um retangulo com perimetro: {peri}cm')
+    elif lados == 5:
+        peri = lados * l_m
+        print(f'É um pentagono com perimetro: {peri}cm')
+    else:
+        print("Poligono não indentificado")'''
+#Melhor colocar um print só
+
+#Questão 9
+'''
+
+valor_1 = int(input("Escreva um valor: "))
+valor_2 = int(input("Escreva um valor: "))
+valor_3 = int(input("Escreva um valor: "))
+
+if valor_1 > valor_2 and valor_1 > valor_3 :
+    print(f"{Valor_1} é o maior)
+elif valor_2 > valor_3 < 0:
+    print(f"{Valor_2} é o maior)
+else:
+    print(f"{Valor_3} é o maior)
+#or 
+
+maior = a
+if b > maior
+    maior = b
+if c > maior
+    maior = c
+
+print(valor_3)'''
+#Da pra melhorar o codigo verificando quem é maior que quem
+#Questao 10
+'''
+p_l = int(input("Me o valor do primeiro lado: "))
+s_l = int(input("Me o valor do segundo lado: "))
+t_l = int(input("Me o valor do terceiro lado: "))
+
+if p_l == s_l == t_l:
+    print("É um Triângulo Equilátero")
+elif p_l == s_l or p_l == t_l or s_l == t_l:
+    print("É um Triângulo Isóceles")
+else:
+    print("É um Triângulo Escaleno")'''
+#Só o python da pra fazer p_l == s_l == t_l, nas outras linguagens tem que usar AND entre elas.
+#Melhor com 1 print só.
+#Questao 11
+'''
+a1 = int(input("Me diga um angulo: "))
+a2 = int(input("Me outro um angulo: "))
+a3 = int(input("Me outro um angulo: "))
+
+if a1 == 90 or a2 == 90 or a3 == 90:
+    print("É um Triângulo Retângulo. ")
+elif a1 > 90 or a2 > 90 or a3 > 90:
+    print("É um Triângulo Obtusângulo. ")
+elif a1 < 90 or a2 < 90 or a3 < 90:
+    print("É um Triângulo Acutângulo. ")'''
+#Melhor com 1 print só
+
+password = '1234'
+senha = ''
+tentativa = 3
+while password != senha and tentativa > 0:
+    senha = input("Digite sua senha: ")
+    tentativa = tentativa - 1
