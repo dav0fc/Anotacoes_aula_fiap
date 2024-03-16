@@ -1,0 +1,6 @@
+Funções Essenciais
+5 Tipos de função
+Problema - Formula (Modelo matematico) - Resolve (Conclusoes matematicas) - Interpreta (Previsões) e Testa (Problema)
+Funções lineares = y = f(x) = mx + b
+Funções quadráticas:  y = f(x) = ax² + bx + c
+Funções polionomiais: y = f(x) = anxn + anxn-1
