@@ -414,7 +414,7 @@ if senha != '1234':
     print("Conta bloqueada")
 else:
     print("Seja bem vindo")
-'''
+
 qtd = 0
 soma = 0
 qtd_pedida = int(input("Quantos somar? "))
@@ -422,3 +422,11 @@ while qtd < qtd_pedida:
     qtd += 1
     soma += qtd
 print(soma)
+'''
+boleano = ''
+while boleano != 'sim' and boleano != 'Sim' and boleano != 'Nao' and boleano != 'nao':
+    boleano = input("Digite sim ou nao: ")
+    if boleano != 'sim' and boleano != 'Sim' and boleano != 'Nao' and boleano != 'nao':
+        print("ESCREV DNV MARRECO")
+
+
