@@ -356,10 +356,69 @@ elif a1 > 90 or a2 > 90 or a3 > 90:
 elif a1 < 90 or a2 < 90 or a3 < 90:
     print("É um Triângulo Acutângulo. ")'''
 #Melhor com 1 print só
-
+'''
 password = '1234'
 senha = ''
 tentativa = 3
 while password != senha and tentativa > 0:
     senha = input("Digite sua senha: ")
     tentativa = tentativa - 1
+'''
+'''Aula 4
+lados = int(input("Diga qts lados: "))
+if lados < 3:
+    print("Não é um poligono")
+elif lados > 5:
+    print("Não indentificado")
+else:
+    if lados == 3:
+        forma = 'Triângulo'
+    elif lados == 4:
+        forma = 'quadrado'
+    else
+        forma = 'Pentágono'
+    medida = int(input("Diga a medida do lado: "))
+    perimetro = lados*medida
+    ´print(f"Você escolheu um {forma} de perimetro: {perimetro}")
+
+vl = int(input("Qual era a velocidade do veicúlo(KM/H): "))
+if vl <= 100:
+    print("Carro isento, não aplicar multa.")
+else:
+    if vl <= 120:
+        multa = 0.2 * vl
+    elif vl <= 150:
+        multa = 0.2 * 120 + 0.3 * vl
+    else:
+        multa = 0.2 * 120 + 0.3 * 150 + 0.4 * vl
+    print(f"Veiculo a {vl}Km/h, aplica multa de R${multa:.2f} ")
+
+qtd_ped = int(input("Quantos numeros quer?: "))
+par = 0
+qtd = 0
+while qtd < qtd_ped:
+    n = int(input("Me diga um numero: "))
+    if n%2 == 0:
+       par += 1
+    qtd += 1
+impar = 5 - par
+print(f"Você digitou {par} pares e {impar} impares ")
+
+senha = ''
+qtd_senha = 4
+while senha != '1234' and qtd_senha > 0:
+    senha = input("Coloque sua senha: ")
+    print("Senha errada.")
+    qtd_senha -= 1
+if senha != '1234':
+    print("Conta bloqueada")
+else:
+    print("Seja bem vindo")
+'''
+qtd = 0
+soma = 0
+qtd_pedida = int(input("Quantos somar? "))
+while qtd < qtd_pedida:
+    qtd += 1
+    soma += qtd
+print(soma)
