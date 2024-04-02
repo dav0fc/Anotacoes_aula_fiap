@@ -6,7 +6,6 @@
 }
 body{
     background-color: #03202a;
-    
 }
 .container{
     padding: 20px;
@@ -18,7 +17,6 @@ nav{
     padding-right: 10px; /*Top Right Bottom Left*/
 
 }
-
 nav a{
      margin-right: 15px;
      text-decoration: none;
