@@ -415,18 +415,26 @@ if senha != '1234':
 else:
     print("Seja bem vindo")
 
-qtd = 0
+i = 0
 soma = 0
 qtd_pedida = int(input("Quantos somar? "))
-while qtd < qtd_pedida:
-    qtd += 1
-    soma += qtd
-print(soma)
+while i < qtd_pedida:
+    i += 1
+    soma += i*i
+    print(soma)
 '''
+
+''' Aula 5
 boleano = ''
-while boleano != 'sim' and boleano != 'Sim' and boleano != 'Nao' and boleano != 'nao':
+while not(boleano == 'sim' or boleano == 'nao'):
     boleano = input("Digite sim ou nao: ")
     if boleano != 'sim' and boleano != 'Sim' and boleano != 'Nao' and boleano != 'nao':
         print("ESCREV DNV MARRECO")
-
-
+'''
+while True:
+    num = input("Diga um Numero: ")
+    if num.isnumeric():
+        num = int(num)
+        if not(num > 0 and num < 10):
+            break
+print("Dentro do intervalo")
