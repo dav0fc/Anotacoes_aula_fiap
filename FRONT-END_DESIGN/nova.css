@@ -1,0 +1,33 @@
+header{
+    border: 3px; 
+    border-style: solid;
+    background-color: yellow;
+}
+nav {
+    border: 3px; 
+    border-style: solid;
+    background-color: aqua;
+}
+section{
+    display: inline-block; 
+    border: 3px; 
+    border-style: solid;
+    background-color: red;
+}
+article{
+   border: 3px; 
+   border-style: solid;
+   background-color: aquamarine;
+}
+footer{
+    border: 3px; 
+    border-style: solid;
+    background-color: blueviolet;
+}
+aside{
+    border: 3px; 
+    border-style: solid; 
+    float: right; 
+    width: 40%;
+    background-color: brown;
+}
