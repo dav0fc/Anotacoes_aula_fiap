@@ -24,9 +24,9 @@ print(frase)
 frase = frase + " roubado"
 print(frase)
 frase = frase + " domingo"
-print(frase)'''
+print(frase)
 import math
-
+'''
 '''AULA 2
 p_n = 2
 s_n = 3
@@ -430,7 +430,7 @@ while not(boleano == 'sim' or boleano == 'nao'):
     boleano = input("Digite sim ou nao: ")
     if boleano != 'sim' and boleano != 'Sim' and boleano != 'Nao' and boleano != 'nao':
         print("ESCREV DNV MARRECO")
-'''
+
 while True:
     num = input("Diga um Numero: ")
     if num.isnumeric():
@@ -438,3 +438,18 @@ while True:
         if not(num > 0 and num < 10):
             break
 print("Dentro do intervalo")
+'''
+'''#Questão 1 - Lista Loop
+while True:
+    nota = input("Me diga um numero entre 0 a 10.\n-> ")
+    if not nota.isnumeric():
+        print("Digite um numero valido")
+    else:
+        break
+'''
+#Questão 2 - Lista Loop
+nome = input("Digite um nome (minimo 3 caracteres)\n->\n: ")
+idade = input("Digite sua idade(entre 0 e 150)\n->\n:")
+salario = input("Digite seu salario(Maior que 0)\n->\n:")
+sexo = input("Digite seu sexo (F/M)\n->\n: ")
+estCivil = input("Digite seu estado civil.\n->\n:")
