@@ -1,0 +1,6 @@
+a) lim central = 1
+b) lim central = 2+1 = 3
+c) lim central = 2.1 + 3.3 = 11
+d) lim central = 2^2 + 2 = 4 + 2 = 6
+e) lim central = 0 /-2 = 0
+f) lim central = e
