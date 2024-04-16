@@ -1,0 +1,29 @@
+div.efeito{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-name: um_efeito;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-direction: alternate;
+}
+@keyframes um_efeito{
+    0%{
+        width: 100px;
+    }
+    25%{
+        width: 300px;
+    }
+    50%{
+        width: 200px;
+        background-color: red;
+    }
+    75%{
+        width: 300px;
+    }
+    100%{
+        width: 100px;
+        background-color: green;
+    }
+}
