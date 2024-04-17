@@ -448,8 +448,26 @@ while True:
         break
 '''
 #Questão 2 - Lista Loop
-nome = input("Digite um nome (minimo 3 caracteres)\n->\n: ")
-idade = input("Digite sua idade(entre 0 e 150)\n->\n:")
+while True:
+    nome = input("Digite um nome (minimo 3 caracteres)\n->: ")
+    nome_tamanho = len(nome)
+    if nome_tamanho < 3:
+        print(nome)
+        print("Valor errado. Digite novamente")
+    else:
+        break
+while True:
+    idade = input("Digite sua idade(entre 0 e 150)\n->\n:")
+    if isnumeric(idade):
+        print("1")
+        
+        
+    else:
+        break
+
+    
+
+
 salario = input("Digite seu salario(Maior que 0)\n->\n:")
 sexo = input("Digite seu sexo (F/M)\n->\n: ")
 estCivil = input("Digite seu estado civil.\n->\n:")
