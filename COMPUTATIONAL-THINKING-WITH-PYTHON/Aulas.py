@@ -441,15 +441,15 @@ print("Dentro do intervalo")
 '''
 '''#Questão 1 - Lista Loop
 while True:
-    nota = input("Me diga um numero entre 0 a 10.\n-> ")
+    nota = input("Me diga um numero entre 0 a 10.-> ")
     if not nota.isnumeric():
         print("Digite um numero valido")
     else:
         break
 '''
-#Questão 2 - Lista Loop
+'''#Questão 2 - Lista Loop
 while True:
-    nome = input("Digite um nome (minimo 3 caracteres)\n->: ")
+    nome = input("Digite um nome (minimo 3 caracteres)->: ")
     nome_tamanho = len(nome)
     if nome_tamanho < 3:
         print(nome)
@@ -457,17 +457,165 @@ while True:
     else:
         break
 while True:
-    idade = input("Digite sua idade(entre 0 e 150)\n->\n:")
-    if isnumeric(idade):
-        print("1")
-        
-        
+    idade = input("Digite sua idade(entre 0 e 150)->:")
+    if idade.isnumeric():
+        idade = int(idade)
+        if idade <= 150 and idade >= 0:
+            break
+        else:
+            print("Valor errado. Digite novamente")
     else:
+        print("Valor errado. Digite novamente")
+while True:
+    salario = input("Digite seu salario(Maior que 0)->:")
+    if salario.isnumeric():
+        salario = int(salario)
+        if salario >= 0:
+            break
+        else:
+            print("Valor errado. Digite novamente")
+    else:
+        print("Valor errado. Digite novamente")
+while True:
+    sexo = input("Digite seu sexo (F/M)->: ")
+    if sexo == 'F' or sexo == 'M':
+            break
+    else:
+        print("Valor errado. Digite novamente")
+while True:
+    estCivil = input("Digite seu estado civil.\n->\n:")
+    if estCivil == 's' or 2 == 'c' or sexo == 'v' or sexo == 'd':
+            break
+    else:
+        print("Valor errado. Digite novamente")'''
+'''#Questao 3
+populaA = 80000
+populaB = 200000
+taxaAnualA = 0.03
+taxaAnualB = 0.15
+anos = 0
+
+def quebrar():
+    while populaA <= populaB:
+        populaA += populaA * taxaAnualA
+        populaB += populaB * taxaAnualB
+        print(populaA)
+        print(populaB)
+        anos += 1
+    print(anos)'''
+
+'''Questao 4
+i = 0
+num = 0
+while i < 5:
+    num_n = input("Digite um numero: ")
+    if num_n.isnumeric():
+        num_n = int(num_n)
+        i += 1
+        num_qtd = i
+        num += num_n
+        print (num)
+    else:
+        print("Valor errado. Digite novamente")
+num = num / num_qtd
+print(num)'''
+
+'''Questao 5
+
+i = 0
+while True:
+    n1 = input("Primeiro numero: ")
+    n2 = input("Segundo numero: ")
+    if n1.isnumeric() and n2.isnumeric():
+        n1 = int(n1)
+        n2 = int(n2)
         break
+    else:
+        print("Valor errado. Digite novamente")
+while n1 < n2 :
+    n1 += 1 
+    if n1 == n2:
+        break
+    else:
+        print(n1)'''
 
-    
+'''Questao 6
+while True:
+    usuario = input("Digite um nome de usuario: ")
+    senha = input("Digite uma senha: ")
+    if usuario == senha:
+        print("Senha não pode ser igual ao nome de usuario.")
+    else:
+        break'''
+'''Questao 7
+num = input("Digite um numero pra ver a tabuada: ")
+i = 0
+while True:
+    if num.isnumeric():
+        num = int(num)
+        break
+    else:
+        print("Valor errado. Digite novamente")
+while i <= 10:
+    i += 1
+    num_tab = num * i
+    print(f"{num} X {i} = {num_tab} ")'''
+
+'''Questao 8
+i = 0
+pos1 = 0
+pos2 = 1
+pos3 = 0
+
+while True:
+    fibo = input("Digite o n-nésimo numero do Fibbonaci: ")
+    if fibo.isnumeric():
+        fibo = int(fibo)
+        break
+    else:
+        print("Valor errado. Digite novamente")
+while not i == fibo:
+    i += 1
+    print(pos2)
+    pos3 = pos1 + pos2
+    pos1 = pos2
+    pos2 = pos3'''
+
+'''Questao 9
+i = 0
+par = 0
+impar = 0
+while i < 10:
+    i += 1
+    while True:
+        num = input("Digite um numero: ")
+        if num.isnumeric():
+            num = int(num)
+            break
+        else:
+            print("Valor errado. Digite novamente")
+    if not num % 2:
+        par += 1
+    else:
+        impar += 1
+print(f"São {par} pares e {impar} impares")'''
+
+'''Questao 10
+i = 0
+fat_r = 1
+while True:
+    fat = input("Digite um numero pra fatorar: ")
+    if fat.isnumeric():
+        fat = int(fat)
+        break
+    else:
+        print("Valor errado. Digite novamente")
+while i < fat:
+    i += 1
+    fat_r = fat_r * i
+    print(fat_r)'''
+
+'''Questao 11'''
 
 
-salario = input("Digite seu salario(Maior que 0)\n->\n:")
-sexo = input("Digite seu sexo (F/M)\n->\n: ")
-estCivil = input("Digite seu estado civil.\n->\n:")
+
