@@ -671,4 +671,44 @@ while ano <= ano_atual:
     aumento = aumento * 2
 print(f"{salario:.2f}")'''
 
-
+'''Questao 14
+num_numeros = 0
+while True:
+    num_numeros = input("Quantos numeros quer ?")
+    if num_numeros.isnumeric():
+        num_numeros = int(num_numeros)
+        break
+    else:
+        print("Valor errado. Digite novamente")
+num = 0
+i = 0
+c1 = 0
+c2 = 0
+c3 = 0
+c4 = 0
+while i < num_numeros:
+    i += 1
+    while True:
+        num = input("Digite um numero: ")
+        if num.isnumeric():
+            num = int(num)
+            break
+        else:
+            print("Valor errado. Digite novamente")
+    if num < 0:
+        print("Numero negativo não entra")
+        break
+    if num > 0 and num <=25:
+        c1 += 1
+    elif num > 25 and num <=50:
+        c2 += 1
+    elif num > 50 and num <=75:
+        c3 += 1
+    elif num > 75 and num <=100:
+        c4 += 1
+    else: 
+        print("Esse numero nao entra em nenhuma caixa")
+print(f"Tem {c1} numeros na caixa 1")
+print(f"Tem {c2} numeros na caixa 2")
+print(f"Tem {c3} numeros na caixa 3")
+print(f"Tem {c4} numeros na caixa 4")'''
