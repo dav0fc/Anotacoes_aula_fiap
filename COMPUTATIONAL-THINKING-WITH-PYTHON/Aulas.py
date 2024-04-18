@@ -628,4 +628,47 @@ if num % 2 and num != 1 or num == 2 :
 else:
     print(f"{num} não é primo.")'''
 
+'''Questao 12
+while True:
+    nota_n = input("Digite o numero de notas: ")
+    if nota_n.isnumeric():
+        nota_n = int(nota_n)
+        break
+    else:
+        print("Valor errado. Digite novamente")
+i = 0
+nota_c = 0
+while i < nota_n:
+    i += 1
+    while True:
+        nota = input("Digite uma nota: ")
+        if nota.isnumeric():
+            nota = int(nota)
+            break
+        else:
+            print("Valor errado. Digite novamente")
+    nota_c += nota
+nota = nota_c / nota_n
+print(f" a media aritimetica das {nota_n} é {nota}")'''
+'''Questao 13
+ano = 1995
+while True:
+        ano_atual = input("Digite um ano a partir de 1995: ")
+        if ano_atual.isnumeric():
+            ano_atual = int(ano_atual)
+            if ano_atual >= 1995:
+                break
+            else:
+                print("Valor errado. Digite novamente")
+        else:
+            print("Valor errado. Digite novamente")
+salario = 1000
+salario_atual = 0
+aumento = 0.015
+while ano <= ano_atual:
+    ano += 1
+    salario = salario + (salario * aumento)
+    aumento = aumento * 2
+print(f"{salario:.2f}")'''
+
 
