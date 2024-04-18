@@ -615,7 +615,17 @@ while i < fat:
     fat_r = fat_r * i
     print(fat_r)'''
 
-'''Questao 11'''
-
+'''Questao 11
+while True:
+    num = input("Digite um numero pra varificar se é primo: ")
+    if num.isnumeric():
+        num = int(num)
+        break
+    else:
+        print("Valor errado. Digite novamente")
+if num % 2 and num != 1 or num == 2 : 
+    print(f"{num} é primo.")
+else:
+    print(f"{num} não é primo.")'''
 
 
