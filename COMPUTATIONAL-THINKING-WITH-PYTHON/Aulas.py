@@ -429,30 +429,26 @@ boleano = ''
 while not(boleano == 'sim' or boleano == 'nao'):
     boleano = input("Digite sim ou nao: ")
     if boleano != 'sim' and boleano != 'Sim' and boleano != 'Nao' and boleano != 'nao':
-        print("ESCREV DNV MARRECO")
+        print("ESCREV DNV MARRECO")'''
 
-while True:
-    num = input("Diga um Numero: ")
-    if num.isnumeric():
-        num = int(num)
-        if not(num > 0 and num < 10):
-            break
-print("Dentro do intervalo")
-'''
 '''#Questão 1 - Lista Loop
 while True:
-    nota = input("Me diga um numero entre 0 a 10.-> ")
-    if not nota.isnumeric():
-        print("Digite um numero valido")
+    num = input("Diga um Numero entre 0 a 10: ")
+    if num.isnumeric():
+        num = int(num)
+        if num > 0 and num <= 10:
+            break
+        else:
+            print("O numero deve ser entre 1 a 10")
     else:
-        break
-'''
+        print("Escreva um numero")
+print("Dentro do intervalo")'''
+
 '''#Questão 2 - Lista Loop
 while True:
     nome = input("Digite um nome (minimo 3 caracteres)->: ")
     nome_tamanho = len(nome)
     if nome_tamanho < 3:
-        print(nome)
         print("Valor errado. Digite novamente")
     else:
         break
@@ -470,7 +466,6 @@ while True:
     salario = input("Digite seu salario(Maior que 0)->:")
     if salario.isnumeric():
         salario = int(salario)
-        if salario >= 0:
             break
         else:
             print("Valor errado. Digite novamente")
@@ -496,7 +491,7 @@ taxaAnualB = 0.15
 anos = 0
 
 def quebrar():
-    while populaA <= populaB:
+    while populaA < populaB:
         populaA += populaA * taxaAnualA
         populaB += populaB * taxaAnualB
         print(populaA)
@@ -520,9 +515,10 @@ while i < 5:
 num = num / num_qtd
 print(num)'''
 
-'''Questao 5
+'''#Questao 5
 
 i = 0
+aux = 0
 while True:
     n1 = input("Primeiro numero: ")
     n2 = input("Segundo numero: ")
@@ -532,6 +528,10 @@ while True:
         break
     else:
         print("Valor errado. Digite novamente")
+if n1 > n2:
+    aux = n2
+    n2 = n1
+    n1 = aux
 while n1 < n2 :
     n1 += 1 
     if n1 == n2:
@@ -559,14 +559,22 @@ while True:
 while i <= 10:
     i += 1
     num_tab = num * i
-    print(f"{num} X {i} = {num_tab} ")'''
+    print(f"{num} X {i} = {num_tab} ")
+    i = 0
+j = 0
+k = 0
+while j < 10:
+    j += 1
+    while i < 100:
+        i += 1
+        num_tab = j * i
+        print(f"{j} X {i} = {num_tab} ")
+    i = 0 '''
 
-'''Questao 8
+'''#Questao 8
 i = 0
 pos1 = 0
 pos2 = 1
-pos3 = 0
-
 while True:
     fibo = input("Digite o n-nésimo numero do Fibbonaci: ")
     if fibo.isnumeric():
@@ -650,7 +658,7 @@ while i < nota_n:
     nota_c += nota
 nota = nota_c / nota_n
 print(f" a media aritimetica das {nota_n} é {nota}")'''
-'''Questao 13
+'''#Questao 13
 ano = 1995
 while True:
         ano_atual = input("Digite um ano a partir de 1995: ")
@@ -667,7 +675,7 @@ salario_atual = 0
 aumento = 0.015
 while ano <= ano_atual:
     ano += 1
-    salario = salario + (salario * aumento)
+    salario += salario * aumento
     aumento = aumento * 2
 print(f"{salario:.2f}")'''
 
