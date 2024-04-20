@@ -1,15 +1,88 @@
-*{
+ *{
     font-family: "Open Sans", sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 body{
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+ }
+/* .multa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    background-color: green;
+    box-shadow: 10px 10px 10px;
+    padding: 50px;
+    gap: 2px;
+    border-radius: 10px;
+    font-size: 20px;
 }
+.multa_input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(0, 183, 255);
+    box-shadow: 10px 10px 10px;
+    padding: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 10px;
+}
+h1{
+    display: flex;
+    gap: 10px;
+    background-color: rgb(0, 183, 255);
+    box-shadow: 10px 10px 10px;
+    padding: 50px;
+    gap: 2px;
+    border-radius: 10px;
+    font-size: 20px;
+}  */
+ /*
+.livros{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    background-color: green;
+    box-shadow: 10px 10px 10px;
+    padding: 50px;
+    gap: 2px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.input {
+    display: flex;
+    gap: 10px;
+    background-color: rgb(0, 183, 255);
+    box-shadow: 10px 10px 10px;
+    padding: 50px;
+    gap: 2px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 10px;
+}
+h1{
+    display: flex;
+    gap: 10px;
+    background-color: rgb(0, 183, 255);
+    box-shadow: 10px 10px 10px;
+    padding: 50px;
+    gap: 2px;
+    border-radius: 10px;
+    font-size: 20px;
+} */
+/*
 #calc{
     display: flex;
     flex-direction: column;
@@ -60,4 +133,4 @@ input{
     padding-left: 50%;
     padding-right: 50%;
     
-}
+} */
