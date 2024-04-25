@@ -720,3 +720,64 @@ print(f"Tem {c1} numeros na caixa 1")
 print(f"Tem {c2} numeros na caixa 2")
 print(f"Tem {c3} numeros na caixa 3")
 print(f"Tem {c4} numeros na caixa 4")'''
+
+
+'''Aula For
+for char in 'arroz':
+    print(char)
+
+for i in range(0,10,2): #start,end, step
+    print(i)
+for i in range(10,0,-2): #start,end, step
+    print(i)
+    
+senha_cadastrada  = '1234'
+senha = input("Diga sua senha: ")
+tentativas = 1
+while senha != senha_cadastrada and tentativas < 3:
+    print("Voce errou!!")
+    senha = input("Diga sua senha: ")
+    tentativas += 1
+if senha == senha_cadastrada:
+    print("Acesso Liberado")
+else:
+    print("Sai hacker")
+i = 0
+for i in range(3):
+    senha = input("Diga sua senha: ")
+    if senha == senha_cadastrada:
+        print("Acesso Liberado")
+        break
+    else:
+        print("Voce errou!!")
+if senha != senha_cadastrada:
+    print("Sai hacker")
+par = 0
+num = 0
+impar = 0
+for i in range(10):
+    num = int(input("Me diga um numero: "))
+    if not num % 2:
+        par += 1
+impar =  10 - par
+print(f"Voce digitou {par} pares e {impar} impares.")
+
+num = 0
+num_soma = 0
+for i in range(1,11):
+    num = int(input("Me diga um numero: "))
+    num_soma += num
+num_media = num_soma / 10
+print(f"A soma desses numeros é {num_soma} e a media é {num_media}")
+num_soma = 0
+for i in range(101):
+    num_soma += i
+print(num_soma)
+
+for i in range(1, 11):
+    print(f"Tabuada do {i}")
+    for j in range(1, 11):
+        print(f"{i} X {j} = {i * j}")
+    print()'''
+
+
