@@ -88,35 +88,63 @@ alert(`Olá ${nome}, voce tem ${idade} anos e trabalha na(o) ${trab}`) */
 //     }
 //     resultado.innerText = `Irá ficar R$${calculo} reais totais`
 // }
-function escolha_cargo(){
-    var cargo  = document.getElementById('cargo').value
-    var calculo = 0
-    var salario = 3000
-    console.log(cargo)
-    switch (cargo){
-        case 'junior': 
-            calculo = salario 
-            console.log("1")
-            break
-        case 'pleno':
-            calculo = salario * 2
-            console.log("2")
-            break
-        case 'senior':
-            calculo = salario * 3
-            console.log("3")
-            break
-        case 'techlead':
-            calculo = salario * 4
-            console.log("4")
-            break
-        case 'diretor':
-            calculo = salario * 5
-            console.log("5")
-            break
-        default:
-            console.log("6")
-            break
+// function escolha_cargo(){
+//     var cargo  = document.getElementById('cargo').value
+//     var calculo = 0
+//     var salario = 3000
+//     console.log(cargo)
+//     switch (cargo){
+//         case 'junior': 
+//             calculo = salario 
+//             console.log("1")
+//             break
+//         case 'pleno':
+//             calculo = salario * 2
+//             console.log("2")
+//             break
+//         case 'senior':
+//             calculo = salario * 3
+//             console.log("3")
+//             break
+//         case 'techlead':
+//             calculo = salario * 4
+//             console.log("4")
+//             break
+//         case 'diretor':
+//             calculo = salario * 5
+//             console.log("5")
+//             break
+//         default:
+//             console.log("6")
+//             break
+//     }
+//     cargo_print.innerText = `O salario será R$${calculo} totais`
+// }
+// function contagem(){
+//     var contagem = parseInt(document.getElementById('num').value)
+//     var i = 0
+//     var contando = contagem
+//     while (i < contagem ){
+//         i++
+//         console.log(contando)
+//         contando = contando - 1
+//     }
+// }
+// for (i=1;i<=10;i++){
+//     for (j=1;j<=10;j++){
+//         console.log(`${i} X ${j} = ${i*j}`)
+//     }
+// }
+// function tabuada(){
+//     var numero = parseInt(document.getElementById('num').value)
+//     for (i=1;i<=10;i++){
+//         console.log(`${numero} X ${i} = ${numero*i}`)
+//     }
+// }
+function verificar(){
+    var numero = parseInt(document.getElementById('num').value)
+    for (i=1;i<=numero;i++){
+        if (numero % i === 0)
+            console.log(i)
     }
-    cargo_print.innerText = `O salario será R$${calculo} totais`
 }
