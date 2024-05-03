@@ -141,10 +141,46 @@ alert(`Olá ${nome}, voce tem ${idade} anos e trabalha na(o) ${trab}`) */
 //         console.log(`${numero} X ${i} = ${numero*i}`)
 //     }
 // }
-function verificar(){
-    var numero = parseInt(document.getElementById('num').value)
-    for (i=1;i<=numero;i++){
-        if (numero % i === 0)
-            console.log(i)
+// function verificar(){
+//     var numero = parseInt(document.getElementById('num').value)
+//     for (i=1;i<=numero;i++){
+//         if (numero % i === 0)
+//             console.log(i)
+//     }
+// }
+
+// console.log("Primeira Frase")
+
+// function printar(){
+//     console.log("Segunda Frase")
+// }
+// printar()
+// console.log("Terceira Frase")
+// function somar(num1 = 0,num2 = 0){
+//     return num1+num2
+// }
+// function printarTela(){
+//     console.log(somar(1,2))
+// }
+// printarTela()
+function escolhaDoPc(){
+    const jokenpo = ["pedra","papel","tesoura"]
+    var numeroAleatorio = Math.floor(Math.random()*3)
+    return jokenpo[numeroAleatorio]
+}
+function escolhaJogador(escolha){
+    var escolhaPc = escolhaDoPc()
+    var resultado = ''
+    console.log(escolha)
+    console.log(escolhaPc)
+    if (escolha === escolhaPc){
+        resultado = 'Deu empate';
     }
+    else if(escolha === 'pedra' && escolhaPc === 'tesoura' || escolha === 'papel' && escolhaPc === 'pedra' || escolha === 'tesoura' && escolhaPc === 'papel'){
+        resultado = 'Voce ganhou';
+    }
+    else{
+        resultado = 'Voce perdeu'
+    }
+    document.getElementById('resultado').innerHTML = resultado
 }
