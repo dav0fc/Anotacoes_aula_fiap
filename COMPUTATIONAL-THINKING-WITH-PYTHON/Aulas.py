@@ -780,4 +780,61 @@ for i in range(1, 11):
         print(f"{i} X {j} = {i * j}")
     print()'''
 
+# anoAtual = 2024
+# idade = 0
+# def calcIdade(anoNasc):
+#     idade = anoAtual -anoNasc
+#     return idade
+# a = calcIdade(int(input("Diga seu ano de nascedura: \n ->")))
+# print(a)
+# lista = [-50,35,90,7,68,170,45,7,88]
+# def maiorElemento():
+#     maior = lista[0]
+#     for numero in lista:
+#         if numero > maior:
+#             maior = numero
+#     return maior
+# print(maiorElemento())
+
+# def tempoMaisUm(hora,minuto):
+#     minuto += 1
+#     if minuto >= 60:
+#         hora += 1
+#         minuto = 0
+#     if hora >= 23:
+#         hora = 0
+#     hora = str(hora)
+#     minuto = str(minuto)
+#     if len(hora) == 1:
+#         hora = (f"0{hora}")
+#     if len(minuto) == 1:
+#         minuto = (f"0{minuto}")
+#     return f"{hora}:{minuto}"
+# minutos =  int(input("Me diga quantos minutos quer pular:\n->"))
+# for i in range(minutos):
+#     print(tempoMaisUm(0,i))
+# def eNumerico(num):
+#     while not num.isnumeric():
+#         print(f"O {num} não é um numero")
+#         num = input("Tente novamente:\n->")
+#     return num
+# def verificarNumero(numeroCelular):
+#     eNumerico(numeroCelular)
+#     carac = len(numeroCelular)
+#     if carac == 11 or carac == 9 or carac == 8:
+#         return True
+#     else:
+#         return False
+# print(verificarNumero("111"))
+# print(verificarNumero("112132"))
+# print(verificarNumero("11982765532"))
+
+def verificarCarro(carros = [], carroEscolhido = ""):
+    while True:
+        for carro in carros:
+            if carro == carroEscolhido:
+                return True
+        carroEscolhido = input("Carro não está nessa lista\n->")
+print(verificarCarro(["Corsa" , "Palio", "Corola"], "Corola"))
+print(verificarCarro(["Corsa" , "Palio", "Corola"], "Palio"))
 
