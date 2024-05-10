@@ -829,12 +829,19 @@ for i in range(1, 11):
 # print(verificarNumero("112132"))
 # print(verificarNumero("11982765532"))
 
-def verificarCarro(carros = [], carroEscolhido = ""):
-    while True:
-        for carro in carros:
-            if carro == carroEscolhido:
-                return True
-        carroEscolhido = input("Carro não está nessa lista\n->")
-print(verificarCarro(["Corsa" , "Palio", "Corola"], "Corola"))
-print(verificarCarro(["Corsa" , "Palio", "Corola"], "Palio"))
+# def verificarCarro(carros = [], carroEscolhido = ""):
+#     while True:
+#         for carro in carros:
+#             if carro == carroEscolhido:
+#                 return True
+#         carroEscolhido = input("Carro não está nessa lista\n->")
+# print(verificarCarro(["Corsa" , "Palio", "Corola"], "Corola"))
+# print(verificarCarro(["Corsa" , "Palio", "Corola"], "Palio"))
+            
+# def tem_numero_impar(lista):
+#     for num in lista:
+#         if num % 2 == 1:
+#             return True
+#     return False
 
+# a = tem_numero_impar([12,3,10])
