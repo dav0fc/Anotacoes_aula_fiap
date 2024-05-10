@@ -845,3 +845,11 @@ for i in range(1, 11):
 #     return False
 
 # a = tem_numero_impar([12,3,10])
+
+carros = ["Corsa" , "Palio", "Corola"]
+precos = [150000 , 50000, 30000]
+
+def carroMaisCaro():
+    maiorPreco = 0
+    for preco in precos:
+        
