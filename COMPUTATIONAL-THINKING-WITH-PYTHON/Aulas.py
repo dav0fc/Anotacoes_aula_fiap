@@ -852,4 +852,83 @@ precos = [150000 , 50000, 30000]
 def carroMaisCaro():
     maiorPreco = 0
     for preco in precos:
-        
+        # def checarNumero(msg,msg_erro):
+#     while True:
+#         num = input(msg)
+#         if num.isnumeric():
+#             num = int(num)
+#
+#             break
+#         print(msg_erro)
+#
+# ano = checarNumero("Diga um ano","Ano deve ser um numero. ")
+# def soma(listaNumero):
+#     soma = 0
+#     for num in listaNumero:
+#         soma += num
+#     return soma
+#
+# def media(listaNumero):
+#     media = soma(listaNumero) / len(listaNumero)
+#     return media
+#
+# print(soma([2,5,8,7,5,6,57]))
+# print(media([1,45,7,4,8,574]))
+# def verif_par(listanumero):
+#     listapar = []
+#     for num in listanumero:
+#         if num % 2 == 0:
+#             listapar.append(num)
+#     return listapar
+# def verif_par_indice(listanumero):
+#     listapar = []
+#     for i in range(len(listanumero)):
+#         if listanumero[i] % 2 == 0:
+#             listapar.append(listanumero[i])
+#     return listapar
+# print(verif_par([2,5,8,7,5,6,57]))
+# print(verif_par([1,45,7,4,8,574]))
+# def encontrar_danilo(listanomes):
+#
+# def encontrar_danilo(listanomes, busca):
+#         for i in range(len(listanomes)):
+#             if listanomes[i] == busca:
+#                 return True
+#         return False
+# print(encontrar_danilo(['Jorge','matheus','Albertho','Juca']))
+# print(encontrar_danilo(['Jorge','matheus','Danilo','Albertho','Juca']))
+# def encontrar_danilo(listanomes, busca):
+#         for i in range(len(listanomes)):
+#             if listanomes[i] == busca:
+#                 return i
+#         return False
+#
+# print(encontrar_danilo(['Jorge','matheus','Albertho','Juca'],'Danilo'))
+# print(encontrar_danilo(['Jorge','matheus','Danilo','Albertho','Juca'],'Danilo'))
+
+
+
+def maior_elemento(listanumeros):
+    maior = listanumeros[0]
+    indice_maior = 0
+    for i in range(len(listanumeros)):
+        if listanumeros[i] > maior:
+            maior = listanumeros[i]
+            indice_maior = i
+    return indice_maior
+lista1  = [1,2,3,4,5,6,7]
+lista2 = [1,45,700,4000,8,574000]
+# maior_lista1 = maior_elemento(lista1)
+# maior_lista2 = maior_elemento(lista2)
+# print(lista1[maior_lista1])
+# print(lista2[maior_lista2])
+def inverter(lista):
+    aux = 0
+    for i in range(len(lista)//2):
+        aux = lista[i]
+        ultimo = len(lista) - (1+i)
+        lista[i] = lista[ultimo]
+        lista[ultimo] = aux
+    return lista
+print(inverter(lista1))
+
