@@ -1,0 +1,642 @@
+[
+    {
+        "id": "a59c8afb42b921b4",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "cc0d7c9fab5ab8b0",
+        "type": "inject",
+        "z": "a59c8afb42b921b4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "num",
+        "x": 70,
+        "y": 260,
+        "wires": [
+            [
+                "0a0b318e3d537ca3"
+            ]
+        ]
+    },
+    {
+        "id": "9e7cb8191dba8db5",
+        "type": "debug",
+        "z": "a59c8afb42b921b4",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "0a0b318e3d537ca3",
+        "type": "http request",
+        "z": "a59c8afb42b921b4",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.openweathermap.org/data/2.5/weather?lat=-23.5489&lon=-46.9342&appid=a669c7581a465a7a7c6ca5cea61e378f&units=metric",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 270,
+        "y": 280,
+        "wires": [
+            [
+                "9424a7f116c01b5c"
+            ]
+        ]
+    },
+    {
+        "id": "51975635eaaea06f",
+        "type": "function",
+        "z": "a59c8afb42b921b4",
+        "name": "function 1",
+        "func": "msg.payload = {\n    \"temperatura\": msg.payload.main.temp,\n    \"nome\" : msg.payload.name\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 320,
+        "wires": [
+            [
+                "9e7cb8191dba8db5"
+            ]
+        ]
+    },
+    {
+        "id": "3089dbe65d817812",
+        "type": "inject",
+        "z": "a59c8afb42b921b4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "num",
+        "x": 70,
+        "y": 320,
+        "wires": [
+            [
+                "ada0ebfc9dbffd8b"
+            ]
+        ]
+    },
+    {
+        "id": "ada0ebfc9dbffd8b",
+        "type": "http request",
+        "z": "a59c8afb42b921b4",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.openweathermap.org/data/2.5/weather?lat=-23.5489&lon=-46.9342&appid=a669c7581a465a7a7c6ca5cea61e378f&units=metric",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 270,
+        "y": 340,
+        "wires": [
+            [
+                "a91790aa6b474b28"
+            ]
+        ]
+    },
+    {
+        "id": "9424a7f116c01b5c",
+        "type": "json",
+        "z": "a59c8afb42b921b4",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 430,
+        "y": 300,
+        "wires": [
+            [
+                "51975635eaaea06f"
+            ]
+        ]
+    },
+    {
+        "id": "a91790aa6b474b28",
+        "type": "json",
+        "z": "a59c8afb42b921b4",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 430,
+        "y": 360,
+        "wires": [
+            [
+                "9e7cb8191dba8db5"
+            ]
+        ]
+    },
+    {
+        "id": "ac5f9cbc42a45999",
+        "type": "inject",
+        "z": "a59c8afb42b921b4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "num",
+        "x": 70,
+        "y": 380,
+        "wires": [
+            [
+                "009a1b8962fe74b8"
+            ]
+        ]
+    },
+    {
+        "id": "009a1b8962fe74b8",
+        "type": "http request",
+        "z": "a59c8afb42b921b4",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.openweathermap.org/data/2.5/weather?lat=-23.5489&lon=-46.9342&appid=a669c7581a465a7a7c6ca5cea61e378f&units=metric",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 270,
+        "y": 420,
+        "wires": [
+            [
+                "58840593fdbb7e28"
+            ]
+        ]
+    },
+    {
+        "id": "58840593fdbb7e28",
+        "type": "json",
+        "z": "a59c8afb42b921b4",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 430,
+        "y": 440,
+        "wires": [
+            [
+                "44c475094790db1f",
+                "8b962216a869c2c1",
+                "436c75fb3c8c66d1",
+                "1ae27c6813cf9887",
+                "9f91a092ae586ef4"
+            ]
+        ]
+    },
+    {
+        "id": "44c475094790db1f",
+        "type": "change",
+        "z": "a59c8afb42b921b4",
+        "name": "Nome",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.name",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 400,
+        "wires": [
+            [
+                "9e7cb8191dba8db5"
+            ]
+        ]
+    },
+    {
+        "id": "8b962216a869c2c1",
+        "type": "change",
+        "z": "a59c8afb42b921b4",
+        "name": "Temp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.main.temp",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 500,
+        "wires": [
+            [
+                "9e7cb8191dba8db5",
+                "948a055a4a851f7b"
+            ]
+        ]
+    },
+    {
+        "id": "948a055a4a851f7b",
+        "type": "ui_gauge",
+        "z": "a59c8afb42b921b4",
+        "name": "",
+        "group": "30f337526f50a302",
+        "order": 1,
+        "width": 5,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Temperatura",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "svg{backgroundcolor: #000000;}",
+        "x": 750,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "436c75fb3c8c66d1",
+        "type": "change",
+        "z": "a59c8afb42b921b4",
+        "name": "Temp Max",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.main.temp_max",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 540,
+        "wires": [
+            [
+                "690924bc22df93ab"
+            ]
+        ]
+    },
+    {
+        "id": "1ae27c6813cf9887",
+        "type": "change",
+        "z": "a59c8afb42b921b4",
+        "name": "Temp Min",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.main.temp_min",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 580,
+        "wires": [
+            [
+                "0ae3c39fd68824da"
+            ]
+        ]
+    },
+    {
+        "id": "9f91a092ae586ef4",
+        "type": "change",
+        "z": "a59c8afb42b921b4",
+        "name": "Vento",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.wind.speed",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 620,
+        "wires": [
+            [
+                "a9a8993167921fae"
+            ]
+        ]
+    },
+    {
+        "id": "690924bc22df93ab",
+        "type": "ui_gauge",
+        "z": "a59c8afb42b921b4",
+        "name": "",
+        "group": "30f337526f50a302",
+        "order": 2,
+        "width": 7,
+        "height": 9,
+        "gtype": "gage",
+        "title": "Temp Max",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 750,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "0ae3c39fd68824da",
+        "type": "ui_gauge",
+        "z": "a59c8afb42b921b4",
+        "name": "",
+        "group": "30f337526f50a302",
+        "order": 3,
+        "width": 5,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Temp Min",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 760,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "a9a8993167921fae",
+        "type": "ui_gauge",
+        "z": "a59c8afb42b921b4",
+        "name": "",
+        "group": "30f337526f50a302",
+        "order": 4,
+        "width": 5,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Vento",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "10",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 750,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "352570849107b0e2",
+        "type": "ui_spacer",
+        "z": "a59c8afb42b921b4",
+        "name": "spacer",
+        "group": "30f337526f50a302",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6bec53df79819466",
+        "type": "ui_spacer",
+        "z": "a59c8afb42b921b4",
+        "name": "spacer",
+        "group": "30f337526f50a302",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "67904f1bad2ff8da",
+        "type": "ui_spacer",
+        "z": "a59c8afb42b921b4",
+        "name": "spacer",
+        "group": "30f337526f50a302",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "91b5cd59d2e78918",
+        "type": "ui_spacer",
+        "z": "a59c8afb42b921b4",
+        "name": "spacer",
+        "group": "30f337526f50a302",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "df0d1cd53b936697",
+        "type": "ui_spacer",
+        "z": "a59c8afb42b921b4",
+        "name": "spacer",
+        "group": "30f337526f50a302",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "290bd0fbc3bbcd98",
+        "type": "ui_spacer",
+        "z": "a59c8afb42b921b4",
+        "name": "spacer",
+        "group": "30f337526f50a302",
+        "order": 10,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "6b0d1c7d6e76fa77",
+        "type": "ui_spacer",
+        "z": "a59c8afb42b921b4",
+        "name": "spacer",
+        "group": "30f337526f50a302",
+        "order": 11,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "a491358e2e40104e",
+        "type": "ui_spacer",
+        "z": "a59c8afb42b921b4",
+        "name": "spacer",
+        "group": "30f337526f50a302",
+        "order": 12,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "7fdd175b76ebb113",
+        "type": "ui_spacer",
+        "z": "a59c8afb42b921b4",
+        "name": "spacer",
+        "group": "30f337526f50a302",
+        "order": 13,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "e854aedef354d6c8",
+        "type": "ui_spacer",
+        "z": "a59c8afb42b921b4",
+        "name": "spacer",
+        "group": "30f337526f50a302",
+        "order": 14,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "0065c6cd321a7c95",
+        "type": "ui_spacer",
+        "z": "a59c8afb42b921b4",
+        "name": "spacer",
+        "group": "30f337526f50a302",
+        "order": 15,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "8074ef8d52a33e0d",
+        "type": "ui_spacer",
+        "z": "a59c8afb42b921b4",
+        "name": "spacer",
+        "group": "30f337526f50a302",
+        "order": 16,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "fdc92561dff1bd41",
+        "type": "ui_spacer",
+        "z": "a59c8afb42b921b4",
+        "name": "spacer",
+        "group": "30f337526f50a302",
+        "order": 17,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "30f337526f50a302",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "30ee31cf725c029a",
+        "order": 1,
+        "disp": true,
+        "width": 23,
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "30ee31cf725c029a",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
