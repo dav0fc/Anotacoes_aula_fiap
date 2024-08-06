@@ -86,7 +86,7 @@ input:focus{
         opacity: 1;
     }
 } */
-.caixa-cinza{
+/* .caixa-cinza{
     background-color: #ccc;
     display: flex;
     flex-direction: row;
@@ -148,4 +148,42 @@ input:focus{
     background-color: #fab778;
     margin: 5px;
     border-radius: 10px;
+} */
+/* #grade {
+    display: grid;
+    grid-template-areas: 
+    "nav header header"
+    "nav produtos publicidade"
+    "nav servicos publicidade"
+    ". footer .";
+    grid-template-columns:20% auto 15% ;
+    grid-template-rows: 100px 1fr 1fr 75px;
+    gap:10px ;
+    height: 750px;
+} */
+/* #grade>*{
+    border: solid 1px black;
+    background-color: orange;
+    border-radius: 5px;
 }
+header{
+        grid-area: header;
+}
+footer{
+    grid-area: footer ;
+}
+section#produtos{
+    grid-area: produtos;
+}
+section#servicos{
+    grid-area: servicos;
+}
+nav{
+    grid-area: nav;
+}
+aside{
+    grid-area: publicidade;
+} */
+
+
+
