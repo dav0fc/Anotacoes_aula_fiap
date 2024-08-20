@@ -185,7 +185,7 @@ aside{
     grid-area: publicidade;
 } */
 
-.container{
+/* .container{
     display: grid;
     height: 100vh;
     grid-template-columns: 100px auto 100px;
@@ -228,4 +228,4 @@ footer{
         "footer footer footer footer";
     }
     
-}
+} */
