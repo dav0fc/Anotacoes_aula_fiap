@@ -1,0 +1,103 @@
+[
+    {
+        "id": "f843e91964a0056c",
+        "type": "tab",
+        "label": "Fluxo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7b9d176ffdac767e",
+        "type": "function",
+        "z": "f843e91964a0056c",
+        "name": "distancia",
+        "func": "msg.headers = {\n    'Device-Token':'5eec652a-5a59-4ef4-b591-7d48a2082156',\n    'Content-Type':'application/json'\n};\n\nvar action = [\n    {\n        'variable':'Distancia',\n        'unit':'cm',\n        'value':msg.payload,\n    }\n]\n\nmsg.payload = action\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 120,
+        "wires": [
+            [
+                "35b6047d7b2a5273"
+            ]
+        ]
+    },
+    {
+        "id": "4945eda0e2badd57",
+        "type": "serial in",
+        "z": "f843e91964a0056c",
+        "name": "Serial",
+        "serial": "478d2ac6ceebbb9f",
+        "x": 370,
+        "y": 160,
+        "wires": [
+            [
+                "7b9d176ffdac767e",
+                "47575c63e95c7947"
+            ]
+        ]
+    },
+    {
+        "id": "35b6047d7b2a5273",
+        "type": "http request",
+        "z": "f843e91964a0056c",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "api.tago.io/data",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 720,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "47575c63e95c7947",
+        "type": "debug",
+        "z": "f843e91964a0056c",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "478d2ac6ceebbb9f",
+        "type": "serial-port",
+        "name": "",
+        "serialport": "COM5",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    }
+]
