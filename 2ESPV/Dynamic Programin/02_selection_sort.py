@@ -109,7 +109,6 @@ def indice_menor(lista):
             i_menor = i
     for i in range(len(lista)):
         if i_menor == lista[i]:
-            print (lista[i])
             return i
     return lista_indice        
 
@@ -151,7 +150,17 @@ e devolve os indices validos para a lista, começando da posicao inicial
 '''
 
 def indices_parciais_da_lista(inicio,lista):
-    pass
+    i_menor = len(lista)
+    indices = []
+    i_lista = inicio
+    while True:
+        for i in range(i_lista,len(lista)):
+            if i_menor > i:
+                indices.append(i_lista)
+        i_lista +=1
+        if i_lista == len(lista):
+            return indices
+
 
 
 '''implemente uma funcao indice_menor_a_partir_de, 
@@ -161,7 +170,19 @@ Se houver mais de um menor elemento, retorne o indice menor.
 por exemplo, a=[10,40,30] indice_menor_a_partir_de(a,0) retorna 0, pois a[0]==10
 por exemplo, a=[10,40,30] indice_menor_a_partir_de(a,1) retorna 2, pois a[2]==30'''
 def indice_menor_a_partir_de(lista,posicao):
-    return 0
+    n_menor = lista[(len(lista) - 1)]
+    i_menor = len(lista)
+    while True:
+        for i in range(posicao,len(lista)):
+            if lista[posicao] < n_menor :
+                i_menor = i
+                n_menor = lista[posicao]
+        posicao +=1
+        if posicao == len(lista):
+            return i_menor
+
+            
+            
 
 '''implemente uma função selectionSort, 
 que recebe uma lista e devolve uma lista ordenada. 
@@ -178,7 +199,20 @@ e vai fazendo isso até ordenar a lista
 Veja: https://visualgo.net/bn/sorting, opcao SEL ou SELECTION SORT
 '''
 def selectionSort(lista):
-    return lista
+    n_menor = lista[(len(lista)-1)]
+    posicao = 0
+    while True:
+        for i in range(posicao,len(lista)):
+            if lista[posicao] < n_menor :
+                n_menor = lista[posicao]
+        posicao +=1
+        print(posicao)
+        print(n_menor)
+        lista[posicao] = n_menor
+        n_menor = lista[(len(lista) - 1)]
+
+        if posicao == len(lista):
+            return lista
 
 
 
